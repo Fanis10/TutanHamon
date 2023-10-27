@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="keywords" content="">
+	<link rel="stylesheet" href="css/libs.min.css">
+	<link rel="stylesheet" href="css/style.min.css">
+	<title>Навигация</title>
+	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&apikey=9133eb49-3a97-4b2d-90be-6b80a97a5036" type="text/javascript"></script>
+</head>
+
+
+<body>
+
+	<div class="navigation">
+		<div class="container">
+			<ul class="navigation__list">
+				<li><a href="index.html">Главная</a></li>
+				<li>
+					<button data-modal="contactModal2" class="btn-green" style="width: 300px; height: 50px">
+						<span>Модальное окно</span>
+					</button>
+				</li>
+				<li>
+					<button data-modal="contactModal3" class="btn-green" style="width: 300px; height: 50px">
+						<span>Модальное окно 2</span>
+					</button>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="modal" id="contactModal2">
+		<div class="modal__dialog modal__dialog2">
+			<button type="button" class="_close-modal modal__close2" data-bs-dismiss="modal" aria-label="Close">
+				<img src="img/close-modal2.png" alt="">
+			</button>
+			<div class="modal__content2">
+				<div class="modal__title2">Заказать звонок</div>
+				<div class="modal__subtitle">Магазин: г. Тула пр. Ленина 19</div>
+				<div class="modal__form">
+					<fieldset class="modal__form-group">
+						<input type="text" placeholder="Ваше имя">
+					</fieldset>
+					<fieldset class="modal__form-group">
+						<input type="tel" placeholder="Телефон для связи">
+					</fieldset>
+					<fieldset class="modal__form-group">
+						<button class=" modal__form-btn">
+							<span>Отправить</span>
+						</button>
+					</fieldset>
+					<fieldset class="modal__form-group">
+						<div class="modal__form-info">
+							Нажимая на кнопку “Отправить”, Вы даете согласие на обработку персональных данных в соответствии<br>
+							<a href="">с политикой конфиденциальности</a>
+						</div>
+					</fieldset>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal" id="contactModal3">
+		<div class="modal__dialog modal__dialog2">
+			<button type="button" class="_close-modal modal__close2" data-bs-dismiss="modal" aria-label="Close">
+				<img src="img/close-modal2.png" alt="">
+			</button>
+			<div class="modal__content2">
+				<div class="modal__icon">
+					<img src="img/checked.png" alt="">
+				</div>
+				<div class="modal__title2">Заявка <br> отправлена!</div>
+				<div class="modal__subtitle">Ожидайте звонок, мы свяжемся с Вами <br> в ближайшее время</div>
+				<button class="modal__btn">
+					Закрыть
+					<span>(8 сек)</span>
+				</button>
+			</div>
+		</div>
+	</div>
+
+	<script src="js/libs.min.js"></script>
+<script src="js/main.min.js"></script>
+
+
+
+</body>
+
+</html>
